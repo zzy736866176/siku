@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寺库-注册</title>
+    <link rel="stylesheet" href="register-sass/register.css">
+</head>
+
+<body>
+    <div id="title-top" class="contain">
+        <div id="content" class="contain-layout">
+            <img src="https://safeimg.secoo.com/imagesNew/loginPic/logo.png" alt="">
+            <a href="#">寺库首页</a>
+            <a href="#">收藏寺库</a>
+            <a href="#">寺库APP</a>
+        </div>
+    </div>
+    <div id="box" class="contain">
+        <div class="contain-layout">
+            <img src="../register/imgs/bckg.png" alt="">
+            <div id="house" class="">
+                <form action="./registerPHP/register.php" method="POST">
+                    <p>用户名<span class=""></span><span class="user-repeat">该用户已被注册</span></p><input type="text"
+                        name="username"><br>
+                    <p>密码<span class=""></span></p><input type="password" name="password"><br>
+                    <p>确认密码<span class=""></span></p><input type="password"><br>
+                    <button type="submit">立即注册</button>
+                    <p><input type="checkbox" name="agree"><span>我已阅读并同意《寺库网用户注册协议》《隐私权政策》</span></p>
+                    <p>已经是寺库会员？<a href="#">立即登录</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="register.js"></script>
+
+</body>
+
+</html>
