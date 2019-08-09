@@ -134,7 +134,11 @@ $('#slider .swiper-wrapper .swiper-slide').on('mouseenter',function(){
         top:0
     },200)
 })
-
+$('.swiper-slide .mask2').on('mouseenter',function(){
+    $(this).next().css('color','#ffb81c')
+}).on('mouseleave',function(){
+    $(this).next().css('color','black')    
+})
 //mask黑色半透明遮罩层
 $('#banner-top img').eq(1).on('mouseenter',function(){
     $('#banner-top .mask').eq(1).animate({
@@ -170,4 +174,12 @@ $('.mask').on('mouseenter',function(){
             opacity:0
         },200)
     })
+})
+
+
+//微信微博鼠标事件
+$('.media ul li').on('mouseenter',function(){
+    $(this).children('img').css('display','block')
+}).on('mouseleave',function(){
+    $(this).children('img').css('display','none')    
 })
