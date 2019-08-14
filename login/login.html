@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寺库网用户登录_免费注册_手机注册 – 寺库网</title>
+    <link rel="icon" href="../index/imgs/icon.icon">
+    <link rel="stylesheet" href="./login-sass/login.css">
+    <link rel="stylesheet" href="./icon/font_f8zivdw6wc5/iconfont.css">
+    <link rel="stylesheet" href="./icon/font_v1hrkb3a3ps/iconfont.css">
+</head>
+<body>
+    <div id="title-top" class="contain">
+        <div id="content" class="contain-layout">
+            <img src="https://safeimg.secoo.com/imagesNew/loginPic/logo.png" alt="">
+            <a href="../index/index.html">寺库首页</a>
+            <a href="#">收藏寺库</a>
+            <a href="#">寺库APP</a>
+        </div>
+    </div>
+    <div id="box" class="contain">
+        <div class="contain-layout">
+            <img src="../register/imgs/bckg.png" alt="">
+            <div id="house">
+                <ul class="login-method contain-layout">
+                    <li>扫码登录</li>
+                    <li>密码登录</li>
+                </ul>
+                <div class="error iconfont icon-group43"></div>
+                <div class="imgs">         
+                    <img src="../login/imgs/code.png" alt="" class="erweima">
+                    <img src="https://passport.secoo.com/login/ewmts.jpg" alt="" class="phone-test">
+                </div>
+                <p>打开<span>寺库app</span>扫一扫登录</p>
+
+                <form action="../login/loginPHP/login.php" method="POST">
+                    <input type="text" name="username" placeholder="用户名/手机号/邮箱">
+                    <input type="password" name="password" placeholder="密码">
+                    <i>验证码：</i>
+                    <input type="text" name="vcode">
+                    <div class="code">
+                        
+                    </div><em>换一换</em>
+                    <input type="checkbox" class="jizhu" checked><u class="">记住账号</u>
+                    <button type="submit" class="liji" >立即登录</button>
+                </form>
+
+                <div class="login-app">
+                    <h3>使用合作网站账号登录</h3>
+                    <h4><span class="iconfont icon-qq">&nbsp;</span>QQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="iconfont icon-weixin">&nbsp;</span>微信</h4>
+                    <h5>还不是寺库会员？<a href="../register/register.html"><span>免费注册</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>忘记密码？</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>
