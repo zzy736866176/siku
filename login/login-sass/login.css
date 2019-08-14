@@ -1,0 +1,337 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* 版心设定 */
+html, body {
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.contain {
+  width: 100%;
+}
+
+.contain-layout {
+  width: 1200px;
+  /* height: 200px; */
+  /* background: red; */
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#title-top {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 70px;
+  width: 100%;
+}
+
+#title-top #content {
+  width: 1200px;
+}
+
+#title-top #content a {
+  padding: 0 10px;
+  line-height: 70px;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  top: -70px;
+  left: 950px;
+  color: #999;
+  text-indent: 10px;
+  font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+}
+
+#title-top #content a:hover {
+  color: #c69c6d;
+}
+
+#box {
+  background-color: #fdf8f4;
+}
+
+#box .contain-layout {
+  background-color: #fdf8f4;
+  height: 720px;
+}
+
+#box .contain-layout img {
+  position: relative;
+  top: 54px;
+  left: 65px;
+}
+
+#box .contain-layout #house {
+  background-color: white;
+  width: 380px;
+  height: 511px;
+  /* background: ; */
+  position: relative;
+  top: -550px;
+  left: 820px;
+  -webkit-box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+}
+
+#box .contain-layout #house .error {
+  width: 82%;
+  height: 30px;
+  background-color: #ffffcf;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  border: 1px solid #ffac76;
+  line-height: 30px;
+  text-indent: 8px;
+  color: #f00;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: none;
+}
+
+#box .contain-layout #house form {
+  display: none;
+}
+
+#box .contain-layout #house [name='username'] {
+  width: 80%;
+  height: 45px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 60px;
+  text-indent: 4px;
+}
+
+#box .contain-layout #house [name='password'] {
+  margin-top: 15px;
+  width: 80%;
+  height: 45px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-indent: 4px;
+}
+
+#box .contain-layout #house i {
+  font-size: 12px;
+  font-style: normal;
+  position: relative;
+  display: block;
+  left: 35px;
+  height: 24px;
+  color: #666;
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+}
+
+#box .contain-layout #house [name='vcode'] {
+  width: 30%;
+  height: 40px;
+  position: relative;
+  left: 35px;
+}
+
+#box .contain-layout #house .code {
+  width: 20%;
+  height: 40px;
+  border: 1px solid #999;
+  position: relative;
+  top: -43px;
+  left: 165px;
+  cursor: pointer;
+}
+
+#box .contain-layout #house em {
+  position: relative;
+  top: -85px;
+  font-size: 12px;
+  font-style: normal;
+  left: 250px;
+  cursor: pointer;
+}
+
+#box .contain-layout #house [type='checkbox'] {
+  width: 14px;
+  position: relative;
+  top: -58px;
+  left: 35px;
+  display: none;
+}
+
+#box .contain-layout #house u {
+  font-size: 12px;
+  left: 55px;
+  top: -73px;
+  position: relative;
+  text-decoration: none;
+  display: none;
+}
+
+#box .contain-layout #house [type='submit'] {
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  color: white;
+  background-color: #f19108;
+  font-size: 16px;
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+  font-weight: bold;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+#box .contain-layout #house .login-method {
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+#box .contain-layout #house .login-method li {
+  color: #666;
+  width: 50%;
+  height: 20px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#box .contain-layout #house .login-method li:first-of-type {
+  color: #f19108;
+}
+
+#box .contain-layout #house .imgs {
+  height: 300px;
+}
+
+#box .contain-layout #house .imgs .erweima {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  left: 99px;
+  top: 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#box .contain-layout #house .imgs .phone-test {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  top: -90px;
+  left: 190px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#box .contain-layout #house p {
+  color: black;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 332px;
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+  font-weight: bold;
+}
+
+#box .contain-layout #house p span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #f19108;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#box .contain-layout #house .login-app {
+  height: 80px;
+  width: 320px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 50px;
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+  color: #999;
+}
+
+#box .contain-layout #house .login-app h3 {
+  font-size: 12px;
+}
+
+#box .contain-layout #house .login-app h4 {
+  width: 100%;
+  height: 60px;
+  font-size: 12px;
+  color: #666;
+  line-height: 60px;
+}
+
+#box .contain-layout #house .login-app h4 span {
+  color: lightblue;
+}
+
+#box .contain-layout #house .login-app h4 .icon-weixin {
+  color: yellowgreen;
+}
+
+#box .contain-layout #house .login-app h5 {
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#box .contain-layout #house .login-app h5 span {
+  color: #f19108;
+}
+
+#box .contain-layout #house .login-app h5 strong {
+  font-weight: normal;
+  color: #666;
+  cursor: pointer;
+}
+/*# sourceMappingURL=login.css.map */
